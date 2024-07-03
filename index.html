@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="gameTitleContainer"><span class="gameTitle"><img src="images/title.png" alt=""></span></div>
+
+    <div class="container">
+      <section class="boardSide">
+        <div class="movesTime">
+          <div class="moves">
+            <span>Moves</span>
+            <span id="nMoves"></span>
+          </div>
+          <div class="time">
+            <span>Time</span>
+            <span id="time">0</span>
+          </div>
+        </div>
+        <div class="boardContainer" id="boardContainer">
+          <h1 id="winText">YOU WIN!</h1>
+          <div class="board" id="board">
+          </div>
+        </div>
+        <div class="newSize">
+          <div class="newGame">
+            <button id="newGame">New Game</button>
+          </div>
+          <div class="size">
+            <span>Size: </span>
+            <input type="number" name="" id="nRows" />
+            <input type="number" name="" id="nCols" />
+          </div>
+        </div>
+      </section>
+      <aside class="leaderboard">
+        <div class="leaderboardTitle">Leaderboards</div>
+        <div class="scores">
+            <div><span>1. </span><span id="first">-</span><span> Seconds</span></div>
+            <div><span>2. </span><span id="second">-</span> Seconds</div>
+            <div><span>3. </span><span id="third">-</span> Seconds</div>
+        </div>
+        <div>
+          <button id="clearScores">Clear Scores</button>
+        </div>
+      </aside>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
